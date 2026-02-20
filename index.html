@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rimsha - Professional Web Developer Portfolio. Modern and Responsive Website Designer.">
+<meta name="keywords" content="Web Developer, Landing Page Designer, Portfolio, HTML CSS Developer">
+<meta name="author" content="Rimsha">
+<title>Rimsha | Professional Web Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Rimsha</h1>
+  <p class="tagline">Professional Web Developer & Landing Page Specialist</p>
+
+  <nav>
+    <button onclick="scrollToTop()">Home</button>
+    <button onclick="openSection('portfolio')">Portfolio</button>
+    <button onclick="openSection('contact')">Contact</button>
+  </nav>
+</header>
+
+<section class="circle-container">
+
+  <div class="circle about" onclick="openSection('about')">About</div>
+  <div class="circle skills" onclick="openSection('skills')">Skills</div>
+  <div class="circle services" onclick="openSection('services')">Services</div>
+  <div class="circle projects" onclick="openSection('projects')">Projects</div>
+  <div class="circle education" onclick="openSection('education')">Education</div>
+  <div class="circle experience" onclick="openSection('experience')">Experience</div>
+  <div class="circle portfolio">
+    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=80&q=80" alt="Sample Project" class="circle-img" onclick="openSection('portfolio')">
+  </div>
+  <div class="circle contact" onclick="openSection('contact')">Contact</div>
+  <div class="circle address" onclick="openSection('address')">Address</div>
+  <div class="circle reviews" onclick="openSection('reviews')">Reviews</div>
+  <div class="circle pricing" onclick="openSection('pricing')">Pricing</div>
+  <div class="circle social" onclick="openSection('social')">Social</div>
+
+</section>
+
+<!-- Content Sections -->
+
+<div id="about" class="content">
+<h2>About Me</h2>
+<p>I am Rimsha, a Professional Web Developer specializing in responsive and high-converting landing pages for businesses and startups.</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="skills" class="content">
+<h2>Skills</h2>
+<p>HTML, CSS, JavaScript, Responsive Design, UI/UX Design</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="services" class="content">
+<h2>Services</h2>
+<p>Landing Page Design, Website Development, Website Redesign</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="projects" class="content">
+<h2>Projects</h2>
+<p>Business Websites, Product Landing Pages, Portfolio Websites</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="education" class="content">
+<h2>Education</h2>
+<p>BS Computer Science (Example University)</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="experience" class="content">
+<h2>Experience</h2>
+<p>Freelance Web Developer – 2 Years Experience</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="portfolio" class="content">
+<h2>Portfolio</h2>
+<p>Modern, Attractive and Mobile Responsive Designs</p>
+<img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=300&q=80" alt="Project Image" style="width:80%; border-radius:15px; margin-top:10px;">
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="contact" class="content">
+<h2>Contact Me</h2>
+<p>Phone: +92 300 1234567</p>
+<p>Email: rimsha@example.com</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="address" class="content">
+<h2>Address</h2>
+<p>Street 10, Model Town, Lahore, Pakistan</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="reviews" class="content">
+<h2>Client Reviews</h2>
+<p>"Highly professional and creative developer!"</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="pricing" class="content">
+<h2>Pricing</h2>
+<p>Basic | Standard | Premium Packages Available</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<div id="social" class="content">
+<h2>Social Media</h2>
+<p>Fiverr | LinkedIn | Instagram</p>
+<button onclick="closeAll()">Close</button>
+</div>
+
+<!-- Footer strip -->
+<footer>
+  <p>www.rimshaportfolio.com | Designed by Rimsha</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
